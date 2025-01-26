@@ -46,7 +46,7 @@ install() {
     pacman -Syu openssh = apt update; apt full-upgrade -y; apt install -y openssh
     check_dependencies
 
-    if wget https://github.com/bepass-org/warp-plus/releases/latest/download/warp-plus_android-arm64.zip &&
+    if wget https://github.com/Mehdioop/warp-plus/releases/latest/download/warp-plus_android-arm64.zip &&
         unzip warp-plus_android-arm64.zip &&
         mv warp-plus warp &&
         chmod +x warp &&
@@ -85,7 +85,7 @@ install_arm() {
         *) echo -e "${red}Unsupported architecture.${rest}"; return ;;
     esac
 
-    WARP_URL="https://github.com/bepass-org/warp-plus/releases/latest/download/warp-plus_linux-$ARCH.zip"
+    WARP_URL="https://github.com/Mehdioop/warp-plus/releases/latest/download/warp-plus_linux-$ARCH.zip"
 
     if wget "$WARP_URL" &&
         unzip "warp-plus_linux-$ARCH.zip" &&
@@ -313,7 +313,7 @@ menu() {
     clear
     echo -e "${green}By --> Peyman * Github.com/Ptechgithub * ${rest}"
     echo ""
-    echo -e "${yellow}❤️Github.com/${cyan}bepass-org${yellow}/warp-plus❤️${rest}"
+    echo -e "${yellow}❤️Github.com/${cyan}Mehdioop${yellow}/warp-plus❤️${rest}"
     echo -e "${purple}*********************************${rest}"
     echo -e "${blue}  ###${cyan} Warp-Plus in Termux ${blue}###${rest} ${purple}  * ${rest}"
     echo -e "${purple}*********************************${rest}"
